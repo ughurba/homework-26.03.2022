@@ -23,7 +23,7 @@ namespace Homework_26._03._2022
         {
             if (side > 0)
             {
-                this.side = side;
+                this.side = side * side;
                 return this.side;
             }
             else

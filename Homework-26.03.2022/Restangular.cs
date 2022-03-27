@@ -10,13 +10,13 @@ namespace Homework_26._03._2022
 
         public int width { get; set; }
         public int length { get; set; }
-
+        int result;
         public Restangular(int width, int length)
         {
             Console.Clear();
             CalcArea(width, length);
 
-            Console.WriteLine($"Length deyeri: {this.length}\nWidth deyeri: {this.width}");
+            Console.WriteLine($"Restangular: {result}");
             Console.WriteLine("\nDevam etmek ucun <Enter> duymesine click edin");
             Console.ReadLine();
         }
@@ -27,8 +27,9 @@ namespace Homework_26._03._2022
             {
                 this.width = width;
                 this.length = length;
+                result = this.width * this.length;
 
-                return this.width;
+                return result;
             }
             else
             {
