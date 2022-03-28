@@ -10,11 +10,10 @@ namespace Homework_26._03._2022
             do
             {
 
-                do
-                {
+             
                     try
                     {
-                        Console.WriteLine("====MENU BAR==== ");
+                        Console.WriteLine("====MENU BAR====");
                         Console.WriteLine("1. Square\n2. Rectangular\n0. Quit\n");
                         num = int.Parse(Console.ReadLine());
                         switch (num)
@@ -28,8 +27,9 @@ namespace Homework_26._03._2022
                                 break;
 
                             case 0:
-                                Environment.Exit(0);
+                                 Environment.Exit(0);
                                 break;
+                                
                         }
                     }
 
@@ -39,9 +39,9 @@ namespace Homework_26._03._2022
                     }
 
 
-                } while (true);
+              
 
-            } while (num < 0 || num > 2);
+            } while (num < 0 || num > 2 || true);
         }
         static int InfoSide(string str)
         {
